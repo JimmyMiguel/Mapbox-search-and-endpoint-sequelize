@@ -1,0 +1,50 @@
+ 
+:root {
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+body, html, #app {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.search-header {
+  padding: 1rem;
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 10px;
+  z-index: 10; /* Para que flote sobre el mapa */
+}
+
+.search-bar {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#map-container {
+  flex: 1;
+  background-color: #e5e5e5; /* Color gris de carga */
+  position: relative;
+}
+
+.placeholder-text {
+  text-align: center;
+  margin-top: 20%;
+  color: #666;
+}
+#map {
+  min-height: 500px;
+  width: 100%;
+}
